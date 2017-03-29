@@ -1,0 +1,427 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+	margin: 0;
+	padding: 0;
+}
+/*nav{
+	width: 50%;
+	margin: 0 auto;
+}*/
+
+html,body{ overflow-y:scroll;} 
+html,body{ overflow:scroll; min-height:100.01%;} 
+html{ overflow:-moz-scrollbars-vertical;} 
+.footer{
+	width: 100%;
+	margin: 0 auto;
+}
+*{box-sizing: border-box;}
+html, body {
+	/*min-height: 100%;*/
+	height: 100%;
+	min-width: 1080px;
+	
+}
+
+body {
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+	color:#434c53;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #232323;
+}
+li{
+	list-style-type: none; 
+}
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow:hidden;
+}
+
+/*以上是公共样式*/
+
+/*nav导航条的css代码*/
+.out, #content,#joinus,#about,#connection{
+	margin: 0 auto;
+	width: 1000px;
+}
+#content,#joinus,#about,#connection{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav{
+	
+	border-bottom: 1px solid #DEDFE0;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.out{
+	/* width: 50%; */
+	/* margin: 0 auto; */
+	height: 60px;
+	line-height: 60px;	
+}
+.outer{
+	margin-top:0;
+	height: 60px;
+	line-height: 60px;
+	/*padding-bottom: 30px;*/
+}
+.logo{
+	
+	/* display: inline-block; */
+	margin-left: 0;
+	height: 30px;
+	/* line-height: 30px; */
+	width: 152px;
+}
+
+.nav-bar>ul>li{
+	/*position: absolute;*/
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 15px;
+	/*height: 15px;*/
+	color: #434c53;
+}
+.nav-bar li:not(:last-child){
+	border-left: 1px solid #DEDFE0;
+	padding: 0 15px 0 15px;
+}
+.nav-bar li:nth-child(4){
+	border-right: 1px solid #DEDFE0;
+	padding: 0 15px 0 15px;
+}
+.nav-bar li:last-child{
+	padding: 0 15px 0 15px;
+	border-right: 1px solid #DEDFE0;
+	
+}
+.nav-bar ul li.active a{
+	color:#53B7BB;
+}
+.nav-bar ul{
+	text-align: right;
+	padding-right: 0;
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+/*section的css*/
+section{
+	min-height: 800px;
+	/* width: 50%; */
+	margin: 30px auto 0;
+	padding-bottom: 300px;
+	color: #434c53;
+
+}
+section>.panel li:first-child{
+	width: 1000px;
+	margin:  0 auto;
+	padding-left: 10px;
+}
+section>.panel>li{
+	display: none;
+}
+section>.panel>li.active{
+	display: block;
+}
+/*首行缩进两个字符*/
+#content .desc{
+	text-indent:2em;
+	
+	width:100%;
+	 
+}
+#baodao{
+	
+	border-bottom:1px solid #DEDFE0;
+	padding-left:-moz-calc(100%/2 - 480px);//用calc计算baodao的左内边距
+	padding-left:-webkit-calc(100%/2 - 480px); 
+	padding-left: calc(100%/2 - 480px);
+	/* padding-left: 40px; */
+	margin-top: -20px;
+	padding-bottom: 10px;
+
+}
+#baodao>a{
+	display: inline-block;
+	margin: 0 6px;
+	
+}
+#baodao>.active{
+	font-weight: bold;
+}
+#content,#content1{
+	
+	margin: 0 auto;
+}
+/* 有缘动态css */
+#content>div.detail{
+	display: none;
+}
+
+#content>div.active{
+	display: block;
+}
+#content>.detail>.desc{
+	overflow-y: hidden;
+}
+#content .hope{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#content .frag{
+	margin-top: 20px;
+	/*display: block;*/
+}
+#content span:nth-of-type(1),#content span:nth-of-type(2),#content span a{
+	color: #999;
+	font-size: 12px;
+}
+#content .clearfix{
+	font-size: 12px;
+	color: #53B7BB;
+	float: right;
+	cursor: pointer;
+}
+/*加入我们*/
+#joinus{
+	/*width: 50%;*/
+	margin: 50px auto 0;
+}
+#joinus .mulu{
+	float: left;
+	width: 20%;
+}
+#joinus .mulu div{
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	border-left: 1px solid #DEDFE0;
+	border-right: 1px solid #DEDFE0;
+	border-top: 1px solid #DEDFE0;
+	padding-left: 10px;
+}
+#joinus .mulu div:last-child{
+	
+	border-bottom: 1px solid #DEDFE0;
+}
+#job{
+	margin-left: 29%;
+}
+#job-position{
+	
+	border-bottom: 1px solid #DEDFE0;
+	padding-bottom: 5px;
+
+}
+#job-position>a{
+	display: inline-block;
+	margin:0 40px 0 0;
+}
+
+#job-position>.active{
+	color: #53B7BB;
+
+}
+#job>.inner>div{
+	display: none;
+}
+#job>.inner>.active{
+	display:block;
+}
+#joinus>.mulu>div.active{
+	background: #DEDFE0;
+	border-left: 6px solid #53B7BB;
+	font-weight: bold;
+}
+.xinxi>div{
+	display: none;
+
+}
+.xinxi>.active{
+	display: block;
+}
+/* 关于我们的css */
+#about .in_section:not(:first-child){
+	margin-top: 25px;
+}
+#about>.guter_section:not(:last-child){
+	margin-bottom: 45px;
+}
+#about>.guter_section:last-child{
+	margin-bottom: 60px;
+}
+#about>.title,#about>div>.title{
+	font-weight: bold;
+	
+}
+#about>div>img{
+	width: 100%;
+}
+/* 联系我们的css */
+#connection>.title{
+	font-weight: bold;
+}
+#connection>.introduce{
+	margin-bottom: 30px;
+}
+#connection>.conPeople{
+	margin-bottom: 50px;
+}
+#job{
+	margin-bottom: 2em;
+}
+#job>.inner>div>.title{
+	display: block;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#first{
+	display: inline-block;
+}
+.fold_put,#time{
+	display: block;
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+
+}
+#time{
+	color: #999;
+	padding-left: 10px;
+	
+}
+.fold_put{
+	color: #53B7BB;
+	cursor: default;
+}
+
+/*a:link*  可以控制正在被访问的面板的颜色/
+/*footer 的css代码*/
+body{
+	min-height:100%; 
+	height: auto !important; 
+	height: 100%; /*IE6不识别min-height*/ 
+	position: relative;
+}
+footer{
+	width: 100%;
+	/*position: fixed;*/
+	bottom: 0px;
+	position: absolute; 
+	height: 270px;/*脚部的高度*/ 
+
+}
+footer{
+	background-color: #eeeef0;
+	margin: 0 auto;
+	font-size: 12px;
+	font-family: '微软雅黑';
+	padding-top: 20px;
+	border-top: 1px solid #DEDFE0;
+	
+}
+footer>div>ol>li>a,.link>ul>li>a,.pro>a,.auth>a,.copyright{
+	color: #999;
+}
+footer>.networker{
+	margin-top: 20px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+}
+footer>.networker>span{
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: text-bottom; 
+}
+footer>.networker>ol{
+	display: inline-block;
+}
+footer>.networker>ol>li{
+	float:left;
+	padding:0 10px 0 10px;
+
+}
+footer>.networker>ol>li>.bl{
+	color: #53B7BB;
+
+}
+footer>.link{
+	margin-top: 25px;
+	width: 100%;
+	text-align: center;
+}
+footer>.link>ul>li{
+	display: inline-block;
+
+}
+footer>.link>ul>li:not(:first-child){
+	border-left: 1px solid #DEDFE0;
+	padding: 0 10px 0 10px
+}
+.pro,.auth{
+	margin-top: 13px;
+	text-align: center;
+}
+.pro>a,.auth>a{
+	display: block;
+}
+.copyright{
+	margin-top: 13px;
+	text-align: center;
+}
+/* 认证images */
+.renzheng{
+	display: block;
+	text-align: center;
+}
+.renzheng>a>img1{
+	display: inline-block;
+	width: 35px;
+	height: 43px;
+}
+.renzheng>a>.img2,.renzheng>a>.img3{
+	display: inline-block;
+	width: 75px;
+	height: 30px;
+}
+.renzheng>a>.img4{
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+}
+.renzheng>a>.img5{
+	display: inline-block;
+	width: 72px;
+	height: 39px;
+}
+
